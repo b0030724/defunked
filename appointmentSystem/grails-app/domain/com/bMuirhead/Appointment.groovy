@@ -12,7 +12,12 @@ class Appointment {
     Date appDuration
     String roomNumber
 
-    static hasOne = [doctor:Doctor, patient:Patient, surgery: Surgery]
+      static hasOne =
+    [
+        surgery: Surgery,
+        doctor: Doctor,
+        patient: Patient
+    ]
 
 }
    
